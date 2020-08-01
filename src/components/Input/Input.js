@@ -53,7 +53,7 @@ const InputContent = props => {
 
     // console.log(_validationObj)
   }, [value])
-
+  console.log(props.obj)
   return (
     <Wrap key={props.obj.title}>
       <label htmlFor={props.obj.title}>
@@ -64,7 +64,7 @@ const InputContent = props => {
       </label>
       <Input
         type={props.obj.type || "text"}
-        name={props.obj.name}
+        name={props.obj.name || ""}
         as={props.obj.as || null}
         maxLength={props.max || null}
         // value={value}

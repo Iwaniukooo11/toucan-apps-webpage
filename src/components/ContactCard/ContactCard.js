@@ -102,21 +102,21 @@ const ContactCard = props => {
   }
 
   const dataForm = [
-    { title: "imię", max: 15 },
+    { title: "imię", max: 15, name: "firstname" },
     {
       title: "email",
       type: "email",
       validationHandler: emailValidator,
       max: 15,
+      name: "email",
     },
-    { title: "wiadomość", as: "textarea" },
+    { title: "wiadomość", as: "textarea", name: "textarea" },
   ]
 
   const dataContact = [
-    { title: "Bydgoszcz", icon: "fas fa-map-marker-alt", name: "firstname" },
-    // { title: "toucan-apps@gmail.com", icon: "far fa-envelope-open" },
-    { title: "toucan@gmail.com", icon: "far fa-envelope-open", name: "email" },
-    { title: "Toucan Apps", icon: "fab fa-google-play", name: "textarea" },
+    { title: "Bydgoszcz", icon: "fas fa-map-marker-alt" },
+    { title: "toucan@gmail.com", icon: "far fa-envelope-open" },
+    { title: "Toucan Apps", icon: "fab fa-google-play" },
   ]
 
   useEffect(() => {
