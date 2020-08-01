@@ -64,7 +64,7 @@ const InputContent = props => {
       </label>
       <Input
         type={props.obj.type || "text"}
-        name={props.obj.title}
+        name={props.obj.name}
         as={props.obj.as || null}
         maxLength={props.max || null}
         // value={value}

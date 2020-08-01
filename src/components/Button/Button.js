@@ -8,7 +8,7 @@ const Button = styled.button`
   background-color: ${({ theme }) => theme.colorPink};
   color: ${({ theme }) => theme.colorWhite};
   transition: 0.3s;
-  opacity: ${props => (props.active ? 1 : 0.7)};
+  opacity: ${props => (props.active ? 1 : 0.5)};
 `
 
 const ButtonComponent = props => {

@@ -4,8 +4,9 @@ import styled from "styled-components"
 import Header from "../Header/Header"
 import Desc from "../Desc/Desc"
 import Button from "../Button/Button"
-
 import Input from "../Input/Input"
+
+import emailjs from "emailjs-com"
 
 const Wrap = styled.main`
   grid-area: card-wrap;
@@ -82,6 +83,21 @@ const ContactCard = props => {
     if (isActive) {
       setValids({})
       setIsActive(false)
+      emailjs
+        .sendForm(
+          "gmail",
+          process.env.GATSBY_TEMPLATE_ID,
+          e.target,
+          process.env.GATSBY_USER_ID
+        )
+        .then(
+          result => {
+            console.log(result.text)
+          },
+          error => {
+            console.log(error.text)
+          }
+        )
     }
   }
 
@@ -97,10 +113,10 @@ const ContactCard = props => {
   ]
 
   const dataContact = [
-    { title: "Bydgoszcz", icon: "fas fa-map-marker-alt" },
+    { title: "Bydgoszcz", icon: "fas fa-map-marker-alt", name: "firstname" },
     // { title: "toucan-apps@gmail.com", icon: "far fa-envelope-open" },
-    { title: "toucan@gmail.com", icon: "far fa-envelope-open" },
-    { title: "Toucan Apps", icon: "fab fa-google-play" },
+    { title: "toucan@gmail.com", icon: "far fa-envelope-open", name: "email" },
+    { title: "Toucan Apps", icon: "fab fa-google-play", name: "textarea" },
   ]
 
   useEffect(() => {
