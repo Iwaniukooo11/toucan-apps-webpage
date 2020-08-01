@@ -9,6 +9,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -42,6 +43,15 @@ module.exports = {
           "application",
         ],
         queryLimit: 1000,
+      },
+    },
+
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "http://www.toucan-apps.pl",
+        sitemap: "https://www.toucan-apps.pl/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

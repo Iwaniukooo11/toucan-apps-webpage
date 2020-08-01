@@ -162,6 +162,13 @@ const Layout = props => {
           <meta property="og:description" content="--todo--" />
           <meta name="description" content="--todo--" />
           <meta name="twitter:card" content="--todo--" />
+          <meta name="twitter:image" content={ogpImg} />
+          <meta name="twitter:site" content="toucan-apps" />
+          <meta
+            name="twitter:title"
+            content="Toucan Apps - Aplikacje dla społeczności"
+          />
+          <meta name="twitter:description" content="--todo--" />
           <meta
             name="keywords"
             content="Tukan, Toucan, Apps, Aplikacje, Iwaniuk, Co, by, dziś, zjeść, Społeczność, Społeczności, dla, Telefon, Android, Iphone, Studio"
@@ -179,6 +186,21 @@ const Layout = props => {
             name="viewport"
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
           />
+          <script type="application/ld+json">
+            {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Studio",
+          "url": "http://www.toucan-apps.pl",
+          "name": "Toucan Apps - Aplikacje dla społeczności",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "todo@gmail.com",
+            "contactType": "Kontakt"
+          }
+        }
+      `}
+          </script>
         </Helmet>
         <Nav />
         <Container className={props.page} height={props.height}>
