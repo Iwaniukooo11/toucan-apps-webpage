@@ -56,7 +56,7 @@ const IndexPage = props => {
 
   return (
     <Layout page="home" title="Home" height={height}>
-      <Desc uppercase bold noMargin spacing center={false}>
+      <Desc uppercase bold noMargin spacing center={false} as={"h2"}>
         aplikacje dla społeczności
       </Desc>
       <Header numOfPink={1} big extra={"aplikacje dla społeczności"}>
