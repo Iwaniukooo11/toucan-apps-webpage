@@ -182,6 +182,7 @@ const Layout = props => {
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"
           />
+          <link rel="canonical" href="https://www.toucan-apps.pl" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"

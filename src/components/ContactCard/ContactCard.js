@@ -115,7 +115,7 @@ const ContactCard = props => {
 
   const dataContact = [
     { title: "Bydgoszcz", icon: "fas fa-map-marker-alt" },
-    { title: "toucan@gmail.com", icon: "far fa-envelope-open" },
+    { title: "kontakt@toucan-apps.pl", icon: "far fa-envelope-open" },
     { title: "Toucan Apps", icon: "fab fa-google-play" },
   ]
 
