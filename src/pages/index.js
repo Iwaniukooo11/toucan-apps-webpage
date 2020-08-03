@@ -78,7 +78,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   # query IndexQuery
-  {
+  query {
     allStrapiStatic(filter: { page: { eq: "home" } }) {
       edges {
         node {

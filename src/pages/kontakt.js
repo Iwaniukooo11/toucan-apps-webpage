@@ -36,7 +36,7 @@ const Contact = props => {
             zrealizowania?
           </Desc>
           <ColorLink outside to="https://forms.gle/h3b2VXDjvQFgyre98">
-            Wypełnij <strong>formularz</strong>!
+            <strong>Napisz</strong> nam o niej!
           </ColorLink>
         </MainTextWrap>
       </CustomTextWrap>
@@ -49,7 +49,7 @@ export default Contact
 
 export const pageQuery = graphql`
   # query IndexQuery
-  {
+  query {
     allStrapiStatic(filter: { page: { eq: "kontakt" } }) {
       edges {
         node {

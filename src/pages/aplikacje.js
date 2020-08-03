@@ -66,7 +66,7 @@ export default Apps
 
 export const pageQuery = graphql`
   #   query IndexQuery
-  {
+  query {
     allStrapiStatic(filter: { page: { eq: "aplikacje" } }) {
       edges {
         node {
@@ -77,7 +77,6 @@ export const pageQuery = graphql`
     }
     #   }
 
-    #   {
     allStrapiApplication {
       edges {
         node {
