@@ -159,19 +159,28 @@ const Layout = props => {
             property="og:image:alt"
             content="Toucan Apps - Aplikacje dla społeczności"
           />
-          <meta property="og:description" content="--todo--" />
-          <meta name="description" content="--todo--" />
-          <meta name="twitter:card" content="--todo--" />
+          <meta
+            property="og:description"
+            content="Jesteśmy studiem projektującym aplikacje, które ułatwiają codzienne życie. Skupiamy się na tworzeniu produktów dla społeczności"
+          />
+          <meta
+            name="description"
+            content="Jesteśmy studiem projektującym aplikacje, które ułatwiają codzienne życie. Skupiamy się na tworzeniu produktów dla społeczności"
+          />
+          <meta name="twitter:card" content="summary" />
           <meta name="twitter:image" content={ogpImg} />
           <meta name="twitter:site" content="toucan-apps" />
           <meta
             name="twitter:title"
             content="Toucan Apps - Aplikacje dla społeczności"
           />
-          <meta name="twitter:description" content="--todo--" />
+          <meta
+            name="twitter:description"
+            content="Jesteśmy studiem projektującym aplikacje, które ułatwiają codzienne życie. Skupiamy się na tworzeniu produktów dla społeczności"
+          />
           <meta
             name="keywords"
-            content="Tukan, Toucan, Apps, Aplikacje, Iwaniuk, Co, by, dziś, zjeść, Społeczność, Społeczności, dla, Telefon, Android, Iphone, Studio"
+            content="tukan, toucan, apps, aplikacje, iwaniuk, bydgoszcz, Co, by, dziś, zjeść, społeczność, spolecznosc, społeczności, spolecznosci, dla, telefon, android, iphone, studio, pl"
           ></meta>
 
           <link
@@ -192,11 +201,11 @@ const Layout = props => {
         {
           "@context": "https://schema.org",
           "@type": "Studio",
-          "url": "http://www.toucan-apps.pl",
+          "url": "https://www.toucan-apps.pl",
           "name": "Toucan Apps - Aplikacje dla społeczności",
           "contactPoint": {
             "@type": "ContactPoint",
-            "email": "todo@gmail.com",
+            "email": "kontakt@toucan-apps.com",
             "contactType": "Kontakt"
           }
         }
