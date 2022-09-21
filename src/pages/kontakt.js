@@ -24,12 +24,17 @@ const StyledDesc = styled(Desc)`
   max-width: 500px;
 `
 
+const data = {
+  desc:
+    "Potrzebujesz się z nami kontaktować? Skorzystaj z formularza albo napisz maila!",
+}
+
 const Contact = props => {
   return (
     <Layout page="contact" title="Kontakt">
       <CustomTextWrap>
         <StyledHeader numOfPink={2}>skontaktuj się z nami!</StyledHeader>
-        <StyledDesc>{props.data.allStrapiStatic.edges[0].node.desc}</StyledDesc>
+        <StyledDesc>{data.desc}</StyledDesc>
         <MainTextWrap>
           <Desc bold noMargin>
             Masz <strong>pomysł</strong> na <strong>aplikację</strong> do
@@ -47,16 +52,16 @@ const Contact = props => {
 
 export default Contact
 
-export const pageQuery = graphql`
-  # query IndexQuery
-  query {
-    allStrapiStatic(filter: { page: { eq: "kontakt" } }) {
-      edges {
-        node {
-          id
-          desc
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   # query IndexQuery
+//   query {
+//     allStrapiStatic(filter: { page: { eq: "kontakt" } }) {
+//       edges {
+//         node {
+//           id
+//           desc
+//         }
+//       }
+//     }
+//   }
+// `

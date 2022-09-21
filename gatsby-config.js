@@ -32,20 +32,20 @@ module.exports = {
         icon: `src/images/toucan-logo.svg`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: "gatsby-source-strapi",
-      options: {
-        // apiURL: "http://localhost:1338",
-        apiURL: "https://cmsv2.herokuapp.com",
+    // {
+    //   resolve: "gatsby-source-strapi",
+    //   options: {
+    //     // apiURL: "http://localhost:1338",
+    //     apiURL: "https://cmsv2.herokuapp.com",
 
-        contentTypes: [
-          // List of the Content Types you want to be able to request from Gatsby.
-          "static",
-          "application",
-        ],
-        queryLimit: 1000,
-      },
-    },
+    //     contentTypes: [
+    //       // List of the Content Types you want to be able to request from Gatsby.
+    //       "static",
+    //       "application",
+    //     ],
+    //     queryLimit: 1000,
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
@@ -58,7 +58,6 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "UA-174188222-1",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         // head: false,
         // Setting this parameter is optional

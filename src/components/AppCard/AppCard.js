@@ -68,7 +68,7 @@ const IconWrap = styled.div`
 // `
 
 const AppCard = ({ obj }) => {
-  console.log("obj: ", obj, process.env.NODE_ENV)
+  // console.log("obj: ", obj, process.env.NODE_ENV)
   return (
     <Container>
       <Img
@@ -80,10 +80,10 @@ const AppCard = ({ obj }) => {
         {obj.desc}
       </Desc>
       <IconWrap>
-        <a href={obj.linkPlay}>
+        <a href={obj.linkPlay} target="_blank">
           <i class="fab fa-google-play gp icon"></i>
         </a>
-        <a href={obj.linkWeb}>
+        <a href={obj.linkWeb} target="_blank">
           <i class="fas fa-globe web icon"></i>
         </a>
       </IconWrap>

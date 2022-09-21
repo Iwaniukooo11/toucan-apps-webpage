@@ -39,6 +39,11 @@ const StyledLinkWrap = styled.main`
   }
 `
 
+const data = {
+  desc:
+    "Jesteśmy studiem projektującym aplikacje, które ułatwiają codzienne życie. Skupiamy się na tworzeniu produktów dla społeczności",
+}
+
 const IndexPage = props => {
   const pageWindow = typeof window === "undefined" ? undefined : window
 
@@ -62,7 +67,7 @@ const IndexPage = props => {
       <Header numOfPink={1} big extra={"aplikacje dla społeczności"}>
         toucan apps
       </Header>
-      <Desc>{props.data.allStrapiStatic.edges[0].node.desc}</Desc>
+      <Desc>{data.desc}</Desc>
       <StyledLinkWrap>
         <ColorLink to="/aplikacje">Zobacz, co już mamy na rynku</ColorLink>
         <ColorLink to="/kontakt">
@@ -76,16 +81,16 @@ const IndexPage = props => {
 
 export default IndexPage
 
-export const pageQuery = graphql`
-  # query IndexQuery
-  query {
-    allStrapiStatic(filter: { page: { eq: "home" } }) {
-      edges {
-        node {
-          id
-          desc
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   # query IndexQuery
+//   query {
+//     allStrapiStatic(filter: { page: { eq: "home" } }) {
+//       edges {
+//         node {
+//           id
+//           desc
+//         }
+//       }
+//     }
+//   }
+// `

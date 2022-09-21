@@ -133,7 +133,7 @@ input,button,textarea{
 `
 
 const Layout = props => {
-  if (process.env.NODE_ENV !== "development") console.log = function () {}
+  // if (process.env.NODE_ENV !== "development") console.log = function () {}
   return (
     <ThemeProvider theme={theme}>
       <>

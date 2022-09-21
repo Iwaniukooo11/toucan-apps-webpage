@@ -86,9 +86,9 @@ const ContactCard = props => {
       emailjs
         .sendForm(
           "gmail",
-          process.env.GATSBY_TEMPLATE_ID,
-          e.target,
-          process.env.GATSBY_USER_ID
+          // process.env.GATSBY_TEMPLATE_ID,
+          e.target
+          // process.env.GATSBY_USER_ID
         )
         .then(
           result => {
