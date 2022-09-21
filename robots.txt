@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: http://www.toucan-apps.pl/sitemap.xml
+Host: www.toucan-apps.pl
